@@ -28,18 +28,96 @@
         <h1>Preencha as Informações</h1>
         <form id="Compra" action="">
             <fieldset>
-                <legend>Entrega</legend>
+                <legend>Contato</legend>
                 <label for="Nome">
-                    Nome<input 
+                    Nome <input 
                     type="text" 
                     name="Nome" 
                     id="Nome"
                     placeholder="Digite seu nome"
+                    pattern="[a-z A-Z]{10,30}"
+
                     required
-                    minlength="10"
-                    maxlength="30"
+                    title="Somente letras e minimo de carcteres 10, maximo 30"
                     autofocus
                     >
+                </label>
+                <label for="Telefone">
+                    Telefone <input 
+                    type="tel" 
+                    name="Telefone" 
+                    id="Telefone"
+                    required
+
+                    placeholder="Informe seu telefone"
+                    pattern="[0-9 ]{11,15}"
+                    title="minimo 11 digitos, maximo 15 digitos"
+                    >
+                </label> <br>
+                <label for="Bairro">
+                    Bairro <input 
+                    type="text" 
+                    name="Bairro" 
+                    id="Bairro"
+                    required
+
+                    pattern="{10,70}"
+                    placeholder="Nome do Bairro"
+                    title="Informe o nome do bairro, evite usar simbolos"
+                    >
+                </label>
+                <label for="Rua">
+                    Bairro <input 
+                    type="text" 
+                    name="Rua" 
+                    id="Rua"
+                    required
+
+                    pattern="{10,70}"
+                    placeholder="Nome da Rua"
+                    title="Informe o nome da Rua, evite usar simbolos"
+                    >
+                </label> <br>
+                <label for="Casa">
+                    Casa <input 
+                    type="number" 
+                    name="Casa" 
+                    id="Casa"
+                    min="1"
+
+                    title="Apenas numeros são aceitos"
+                    placeholder="Informe numero da casa"
+                    >
+                </label>
+                <label for="Complemento">
+                    Complemento <input 
+                    type="text" 
+                    name="Complemento" 
+                    id="Complemento"
+                    maxlength="100"
+                    placeholder="Informe um complemento"
+                    title="Tente ser o mais expecifico possivel"
+
+                    >
+                </label>
+            </fieldset>
+            <h2>Forma de Pagamento</h2>
+            <fieldset>
+                <legend>Pagamento</legend>
+                
+                <label for="Pagamento">
+                    Pix <input 
+                    type="radio" 
+                    name="Pagamento" 
+                    id="Pagamento"> <br>
+                    Cartão <input 
+                    type="radio" 
+                    name="Pagamento" 
+                    id="Pagamento"> <br>
+                    Á Vista <input 
+                    type="radio" 
+                    name="Pagamento" 
+                    id="Pagamento">
                 </label>
             </fieldset>
             <button form="Compra" type="submit">Comprar</button>
