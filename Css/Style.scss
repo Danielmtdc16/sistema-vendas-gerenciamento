@@ -1,12 +1,16 @@
-@import "Layout";
-@import "Typography";
-@import "Collor";
-
-
-
-body{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
     height: 100vh;
     width: 100vw;
 }
+
+
+@import "Layout";
+@import "Typography";
+@import "Collor";
