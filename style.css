@@ -1,0 +1,18 @@
+.conteudo_tabela{
+    height: 300px;
+    width: 300px;
+    background-color: #FFD4BA;
+    border-radius: 10px;
+}
+
+th{
+    width: 100px;
+}
+
+.container{
+    display: flex;
+}
+
+#finalizar{
+    align-self: flex-end;
+}
