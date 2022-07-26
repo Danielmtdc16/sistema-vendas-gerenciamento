@@ -1,12 +1,29 @@
+@import url('https://fonts.googleapis.com/css2? family= Caveat+Brush & family= Edu+NSW+ACT+Foundation & display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .conteudo_tabela{
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     background-color: #FFD4BA;
     border-radius: 10px;
 }
 
+th, #valor_total{
+    font-family: 'Caveat Brush', cursive;
+    color: #472B01;
+}
+
+header{
+    min-height: 50px;
+    background-color: #EC5215;
+    
+}
 th{
-    width: 100px;
+    width: 200px;
 }
 
 .container{
@@ -15,4 +32,37 @@ th{
 
 #finalizar{
     align-self: flex-end;
+    height: 40px;
+    width: 90px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: #FF5757;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+nav{
+    display: flex; 
+}
+
+.i{
+    display: flex;
+    margin-left: 30px;
+}
+
+.i a{
+    margin-left: 50px;
+}
+
+#valor_total{
+    margin: 0.5ch 3ch;
+    
 }

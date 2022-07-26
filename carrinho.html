@@ -5,23 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Caveat+Brush & family= Edu+NSW+ACT+Foundation & family= Shadows+Into+Light & display=swap" rel="stylesheet">
     <title>Carrinho</title>
 </head>
 <body>
     <header>
         <nav>
-
-            <ul id="Nav_login">
-                <li>
-                    <a id="Login" href="">Login</a>
-                </li>
-            </ul>
             <ul>
-                <li><a href="">Cardápio</a></li>
-                <li><a href="">Promoções</a></li>
-                <li><a href="">Carrinho</a></li>
+                <li id="login"><a href="">Login</a></li>
+                <div class="i">
+                    <li><a href="">Cardápio</a></li>
+                    <li><a href="">Promoções</a></li>
+                    <li><a href="">Carrinho</a></li>
+                </div>
             </ul>
-
         </nav>
     </header>
 
@@ -32,9 +31,9 @@
             <div class="conteudo_tabela">
                 <table>
                     <thead>
-                        <th>Tipo</th>
-                        <th>Quantidade</th>
-                        <th>Preço</th>
+                        <th class="informacoes_pedido">Tipo</th>
+                        <th class="informacoes_pedido">Quantidade</th>
+                        <th class="informacoes_pedido">Preço</th>
                         
                     </thead>
 
@@ -44,7 +43,7 @@
                 </table>
             </div>
             
-            <p id="valor_total">Valor Total</p>
+            <h4 id="valor_total">Valor Total</h4>
 
             <input type="submit" value="Finalizar" id="finalizar">
         </div>
