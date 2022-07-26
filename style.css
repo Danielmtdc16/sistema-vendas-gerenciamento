@@ -22,16 +22,20 @@ th, #valor_total{
 }
 
 header{
+    display: flex;
+    align-items: center;
     min-height: 50px;
-    background-color: #EC5215;
-    
+    background-color: #EC5215;  
+    font-family:'Caveat Brush', cursive;
 }
+
 th{
     width: 200px;
 }
 
 .container{
     display: flex;
+    margin-left: 10px;
 }
 
 #finalizar{
@@ -48,25 +52,13 @@ th{
 
 a{
     text-decoration: none;
-}
-ul{
-    list-style: none;
-}
-
-nav{
-    display: flex; 
-}
-
-.i{
-    display: flex;
-    margin-left: 30px;
-}
-
-.i a{
-    margin-left: 50px;
+    color: white;
 }
 
 #valor_total{
     margin: 0.5ch 3ch;
-    
+}
+
+#titulo_principal{
+    margin-left: 10px;
 }
