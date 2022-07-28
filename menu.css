@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2? family= Caveat+Brush & family= Edu+NSW+ACT+Foundation & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/*=========================== Header ===========================*/
+
+header{
+    background-color: #EC5215;
+    height: 10vh;
+}
+
+
+nav{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    
+    
+    
+}
+
+nav #div_container{
+    width: 70px;
+    height: 60px;
+}
+
+nav #div_container #botao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+nav #div_container #botao div{
+    height: 15%;
+    width: 80%;
+    background-color: white;
+}
+
+nav ul:nth-child(2){
+    display: flex;
+    width: 1fr;
+    height: 50%;
+    align-items: center;
+
+    
+}
+
+#box1{
+    display: flex;
+    width: 50%;
+    height: 50%;
+}
+
+#box1 div h1{
+    color: white;
+}
+
+#box1 div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+nav ul:nth-child(4){
+    display: flex;
+    width: 40%;
+    height: 50%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#box2{
+    width: 1fr;
+    height: 50%;
+}
+
+
+
+#box1 div{
+    height: 100%;
+    width: 100%;
+    
+}
+
+#Imagem1{
+    height: 100%;
+}
+
+#Imagem2{
+    height: 100%;
+}
+
+
+
+
+/*=========================== Responsividade ===========================*/
+
+
+@media (max-width: 768px){
+
+    /*==================== Ativado ====================*/
+
+
+    /*==================== Modificado ====================*/
+    nav{
+        width: 90%;
+        background-color: chartreuse;
+    }
+
+    #div_container{
+        width: 10%;
+        background-color: #472B01;
+    }
+
+    
+
+    #box1{
+        background-color: blueviolet;
+        width: 100%;
+    }
+
+    #Nav_navegacao {
+            width: 10%;
+            background-color: aqua;
+        }
+
+    #box2{
+        width: 10%;
+        background-color: brown;
+    }
+
+    
+
+
+    /*==================== Desativado ====================*/
+
+
+    #Nav_navegacao li:nth-child(1),li:nth-child(2){
+        display: none;
+    }
+
+
+    #Nav_login,#box1 img{
+        display: none;
+    }
+}
+
+
+@media (min-width: 769px){
+    #div_container{
+        display: none;
+    }
+    #box1 div h1{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px){
+
+    #box1{
+        width: 40%;
+    }
+
+    nav ul:nth-child(4){
+        width: 50%;
+    }
+}
