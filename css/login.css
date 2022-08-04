@@ -1,0 +1,193 @@
+main{
+    display: grid;
+
+    grid-template-areas: 
+    
+    "Aside1 Conteudo Aside2"
+    "Aside1 Formulario Aside2"
+    ;
+
+    grid-template-columns: 1fr 50% 1fr;
+    grid-template-rows: 20% 1fr;
+
+    height: 90vh;
+    width: 100vw;
+}
+
+#Dados{
+    grid-area: Conteudo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    grid-area: Formulario;
+    display: flex;
+    margin-top: 75%;
+    flex-direction: column;
+    color: #A0623D;
+
+}
+
+
+
+#Label-Usuario{
+    display: grid;
+    grid-template-areas: 
+    "Nome1 Input1"
+    ;
+    grid-template-columns: 30% 65%;
+    gap: 7%;
+    padding: 3%;
+
+    
+}
+
+#Label-Senha{
+    display: grid;
+    grid-template-areas: 
+    "Nome2 Input2"
+    ;
+    grid-template-columns: 30% 65%;
+    gap: 7%;
+    padding: 3%;
+    
+}
+
+h3{
+    font-size: 18px;
+    text-align: right;
+}
+
+#Usuario-Titulo{
+    grid-area: Nome1;
+}
+
+#Senha-Titulo{
+    grid-area: Nome2;
+    
+}
+
+
+
+#Usuario{
+    display: flex;
+    grid-area: Input1;
+    height: 100%;
+    border: 1px solid black;
+    
+}
+
+
+
+#Senha{
+    display: flex;
+    grid-area: Input2;
+    height: 100%;
+    border: 1px solid black;
+    
+}
+
+
+#Titulo-Login{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A0623D;
+    font-size: 40px;
+
+}
+hr{
+    flex: 1;
+    background-color: black;
+    color: black;
+    height: 5px;
+}
+
+aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Esquerda-aside{
+    grid-area: Aside1;
+
+    background-color: #66903E;
+}
+
+#Direita-aside{
+    grid-area: Aside2;
+    background-color: #FF5757;
+}
+
+
+.Imagem-Login{
+    width: 100%;
+} 
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6%;
+    margin: 0 auto;
+    margin-top: 3%;
+    border-radius: 25%;
+    padding: 2%;
+    background-color: #FF1616;
+    border: none;
+    
+}
+
+button:hover{
+    color: white;
+}
+
+@media (max-width: 300px){
+    h3{
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 800px){
+    h3{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+    }
+    #Label-Usuario{
+        grid-template-columns: 15% 75%;
+        gap: 10%;
+        height: 6vh;
+    }
+    #Label-Senha{
+        grid-template-columns: 15% 75%;
+        gap: 10%;
+        height: 6vh;
+    }
+
+    form{
+        margin-top: 30%;
+    }
+}
+
+
+@media (min-width: 1024px){
+    h3{
+        font-size: 40px;
+    }
+
+    #Label-Usuario{
+        grid-template-columns: 20% 60%;
+    }
+    #Label-Senha{
+        grid-template-columns: 20% 60%;
+    }
+    form{
+        margin-top: 15%;
+    }
+}
