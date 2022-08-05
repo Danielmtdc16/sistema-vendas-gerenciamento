@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+main{
+    height: 80%;
+}
+
+
+#Container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-color: #FFD4BA;
+    height: 50%;
+    width: 100%;
+    gap: 2%;
+
+}
+
+.box{
+    width: 20%;
+    height: 60%;
+    background-color: #FF970F;
+}
+
+#botaos{
+    display: flex;
+    position: absolute;
+    bottom: 2%;
+    justify-content: space-between;
+    height: 12%;
+    width: 100%;
+
+}
+
+
+#botaos button{
+    margin: 0 2%;
+    height: 100%;
+    width: 15%;
+}
+
+
+#imagem-direita{
+    height: 100%;
+
+}
+
+#imagem-esquerda{
+    height: 100%;
+}
+
+
+
+
+
+@media (min-width: 768px){
+    #botaos button{
+        margin: 0 2%;
+        height: 100%;
+        width: 10%;
+    }
+}

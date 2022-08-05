@@ -5,9 +5,13 @@
 
 header{
     background-color: #EC5215;
-    height: 10vh;
+    height: 10%;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
 
 nav #Mobile{
     display: none;
@@ -17,6 +21,7 @@ nav #Mobile{
     height: 90vh;
     margin-top: 100vh;
     animation: none ;
+    z-index: 1;
     
 
     margin-left: -55%;
