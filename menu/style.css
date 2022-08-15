@@ -1,0 +1,181 @@
+:root{
+    --background-color: #EC5215;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+    background-color: var(--background-color);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 8%;
+    width: 100%;
+}
+
+/*============= Configurações menu Global =============*/
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+nav li:nth-child(2), li:nth-child(3){
+    width: 20% ;
+    
+}
+
+
+
+img{
+    height: 50%;
+    
+}
+/*============= Configurações menu left =============*/
+nav #Li-ESquerda{
+    display: flex;
+    justify-content: left;
+    width: 40%;
+    
+    
+}
+
+nav li #Link-Left{
+    width: 1fr;
+}
+
+nav li #Login{
+    width: 1fr;
+}
+
+/*============= Configurações menu right =============*/
+
+nav li:nth-child(4){
+    display: flex;
+    justify-content: right;
+    width: 20%;
+}
+
+nav li #Link-Right{
+    width: 1fr;
+}
+
+nav li #Carrinho{
+    width: 1fr;
+}
+
+
+
+
+
+main{
+    height: 84%;
+    width: 100%;
+    background-color: brown;
+}
+
+footer{
+    height: 8%;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+@media (min-width: 851px){
+    #div_menu{
+        display: none;
+    }
+}
+
+@media (max-width: 850px){
+    .links_meio{
+        display: none;
+    }
+
+    #div_menu{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 100%;
+        flex: 1;
+    }
+
+    #div_menu img{
+        height: 70%;
+    }
+
+    nav ul{
+        justify-content: space-between;
+        flex: 2;
+    }
+/*============= Configurações menu celular =============*/
+
+    .active{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        top: 8%;
+
+        background-color: aqua;
+        height: 20vh;
+        width: 50vw;
+        transform: translateX(-100vw);
+        animation-name: menu;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .active ul{
+        display: flex;
+        flex-direction: column;
+        background-color: blue;
+    }
+
+    .active ul li{
+        width: 100%;
+        border: 5px solid black;
+    }
+    .active ul li:nth-child(2){
+        border-top: none;
+    }
+}
+
+
+@keyframes menu{
+    to{
+        transform: translateX(0);
+    }
+}
